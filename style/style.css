@@ -218,13 +218,66 @@ nav {
   color: var(--white);
   margin-top: 40px;
 }
+
+/* 
+----------------------------------------
+Media Quary started
+----------------------------------------
+*/
+
 @media screen and (max-width: 556px) {
+  .fixed-width {
+    width: 80%;
+    padding: 20px;
+  }
+  .menus > ul > a {
+    display: none;
+  }
+  .menus ul {
+    /* gap: 0px; */
+  }
+  .nav {
+    width: 100%;
+  }
+  .top-player-container {
+    justify-content: center;
+  }
+  .top-player {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .top-player img {
+    width: 70px;
+  }
+  .player {
+    flex-direction: column;
+  }
   .top-blog {
     grid-template-columns: repeat(1, 1fr);
   }
   .course-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 20px;
-    gap: 30px;
+  }
+
+  .blog-post > img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 556px) and (max-width: 1140px) {
+  .fixed-width {
+    width: 80%;
+    padding: 50px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .course-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-top: 20px; */
+  }
+
+  .blog-post > img {
+    width: 40%;
   }
 }
