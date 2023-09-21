@@ -166,8 +166,12 @@ nav {
 .course > h3 {
   font-size: 20px;
 }
-.course > .author {
+.course > .author > span {
   color: var(--red1);
+  cursor: pointer;
+}
+.course > .author > span:hover {
+  border-bottom: 1px solid var(--red1);
 }
 .bottom-section {
   display: flex;
@@ -205,4 +209,10 @@ nav {
   align-items: center;
   color: var(--white);
   margin-top: 40px;
+}
+
+@media screen and (max-width: 556px) {
+  .top-blog {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
