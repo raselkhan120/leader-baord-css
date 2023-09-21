@@ -2,6 +2,9 @@
   margin: 0;
   font-family: Popins, sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --mainColor: #562eff;
   --black: #000000;
